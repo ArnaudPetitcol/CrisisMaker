@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self' 'unsafe-inline' 'unsafe-eval' https://cdnjs.cloudflare.com https://unpkg.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' data: https://fonts.gstatic.com; img-src 'self' data: blob:; media-src blob:; frame-src 'self' blob: data:; connect-src https://api.anthropic.com https://api.openai.com https://*.openai.azure.com https://*.cognitiveservices.azure.com https://*.tts.speech.microsoft.com https://generativelanguage.googleapis.com https://unpkg.com https://cdn.jsdelivr.net https://fonts.googleapis.com https://fonts.gstatic.com; form-action 'none'; base-uri 'none'; frame-ancestors 'none';">
+  <title>CrisisMaker by Wavestone - Crisis exercise studio</title>
+  <!-- Critical inline styles for instant first paint (no flash of white) -->
+  <style>
+    body{margin:0;background:radial-gradient(circle at top right,rgba(48,195,143,.18),transparent 24%),radial-gradient(circle at top left,rgba(15,109,143,.18),transparent 30%),linear-gradient(180deg,#f8fcfd 0%,#edf6f8 240px);min-height:100vh}
+  </style>
+  <!-- Full CSS -->
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="preload" href="fonts/inter-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="fonts/fonts.css">
+  <!-- Local-first: place html-to-image.min.js and jszip.min.js in js/lib/ for offline/standalone use -->
+  <script defer src="js/lib/html-to-image.min.js"></script>
+  <script defer src="js/lib/jszip.min.js"></script>
+  <script defer src="js/lib/xlsx.full.min.js"></script>
+  <!-- CDN fallback if local libs are missing (requires internet) -->
+  <script defer src="js/lib-fallback.js"></script>
+</head>
+<body>
+  <div id="app"></div>
+  <div id="toast-root" class="toast-stack" aria-live="polite"></div>
+  <script src="js/data.js"></script>
+  <script src="js/config.js"></script>
+  <script src="js/debrief-renderer.js"></script>
+  <script src="js/debrief-editor-source.js"></script>
+  <script src="js/debrief.js"></script>
+  <script src="js/templates.js"></script>
+  <script src="js/ai.js"></script>
+  <script src="js/import-chronogram.js"></script>
+  <script src="js/import-chronogram-ui.js"></script>
+  <script src="js/checker.js"></script>
+  <script src="js/persistence.js"></script>
+  <script src="js/views.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
